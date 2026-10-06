@@ -1,5 +1,7 @@
 === Первый раздел ===
 
+https://i.supaimg.com/2cb0b2ce-67dc-431c-98db-4e7770ccd3b2/ade9745f-cf0f-4766-ba6e-91d158fbf724.jpg
+
 static void R1Task1()
     {
         Console.Write("Введите целое число: ");

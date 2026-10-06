@@ -46,7 +46,7 @@ static void R1Task5()
     if (n % 5 == 0) Console.WriteLine("Делится на 5."); else Console.WriteLine("Не делится на 5.");
 }
 
-
+https://i.supaimg.com/2cb0b2ce-67dc-431c-98db-4e7770ccd3b2/55597d40-9090-41b8-8936-9055f19be081.jpg
 
 static void R1Task6()
 {
@@ -54,7 +54,7 @@ static void R1Task6()
     if (n % 10 == 0) Console.WriteLine("Оканчивается нулем."); else Console.WriteLine("Не оканчивается нулем.");
 }
 
-
+https://i.supaimg.com/2cb0b2ce-67dc-431c-98db-4e7770ccd3b2/a877e657-e646-4b05-bfcb-077973883d85.jpg
 
 static void R1Task7()
 {

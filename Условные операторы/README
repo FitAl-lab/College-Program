@@ -2,289 +2,438 @@
 
 https://i.supaimg.com/2cb0b2ce-67dc-431c-98db-4e7770ccd3b2/ade9745f-cf0f-4766-ba6e-91d158fbf724.jpg
 
+=== Первый раздел ===
+
 static void R1Task1()
-    {
-        Console.Write("Введите целое число: ");
-        int n = int.Parse(Console.ReadLine());
-        if (n > 0) Console.WriteLine("Число положительное.");
-        else Console.WriteLine("Число не положительное.");
-    }
-    static void R1Task2()
-    {
-        Console.Write("Введите целое число: ");
-        int n = int.Parse(Console.ReadLine());
-        if (n % 2 == 0) Console.WriteLine("Число четное.");
-        else Console.WriteLine("Число нечетное.");
-    }
-    static void R1Task3()
-    {
-        Console.Write("Введите первое число: "); int a = int.Parse(Console.ReadLine());
-        Console.Write("Введите второе число: "); int b = int.Parse(Console.ReadLine());
-        if (a > b) Console.WriteLine($"Наибольшее: {a}"); else Console.WriteLine($"Наибольшее: {b}");
-    }
-    static void R1Task4()
-    {
-        Console.Write("Введите первое число: "); double a = double.Parse(Console.ReadLine());
-        Console.Write("Введите второе число: "); double b = double.Parse(Console.ReadLine());
-        if (a < b) Console.WriteLine($"Наименьшее: {a}"); else Console.WriteLine($"Наименьшее: {b}");
-    }
-    static void R1Task5()
-    {
-        Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
-        if (n % 5 == 0) Console.WriteLine("Делится на 5."); else Console.WriteLine("Не делится на 5.");
-    }
-    static void R1Task6()
-    {
-        Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
-        if (n % 10 == 0) Console.WriteLine("Оканчивается нулем."); else Console.WriteLine("Не оканчивается нулем.");
-    }
-    static void R1Task7()
-    {
-        Console.Write("Введите температуру: "); double t = double.Parse(Console.ReadLine());
-        if (t < 0) Console.WriteLine("На улице мороз, наденьте шапку.");
-    }
-    static void R1Task8()
-    {
-        Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
-        if (n > 100) n -= 20; else n += 10;
-        Console.WriteLine($"Результат: {n}");
-    }
-    static void R1Task9()
-    {
-        Console.Write("Введите первое число: "); int a = int.Parse(Console.ReadLine());
-        Console.Write("Введите второе число: "); int b = int.Parse(Console.ReadLine());
-        if (a == b) Console.WriteLine("Числа равны."); else Console.WriteLine($"Произведение: {a * b}");
-    }
-    static void R1Task10()
-    {
-        Console.Write("Введите возраст: "); int age = int.Parse(Console.ReadLine());
-        if (age >= 18) Console.WriteLine("Доступ разрешен."); else Console.WriteLine("Доступ запрещен.");
-    }
-    static void R1Task11()
-    {
-        Console.Write("Введите число: "); int n = Math.Abs(int.Parse(Console.ReadLine()));
-        if (n >= 100 && n <= 999) Console.WriteLine("Да."); else Console.WriteLine("Нет.");
-    }
-    static void R1Task12()
-    {
-        Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
-        if (n % 3 == 0) Console.WriteLine("Делится на 3."); else Console.WriteLine("Не делится на 3.");
-    }
-    static void R1Task13()
-    {
-        Console.Write("Введите X: "); double x = double.Parse(Console.ReadLine());
-        if (x > 0) Console.WriteLine("Точка правее нуля."); else Console.WriteLine("Точка не правее нуля.");
-    }
-    static void R1Task14()
-    {
-        Console.Write("Введите баланс: "); double b = double.Parse(Console.ReadLine());
-        if (b < 0) Console.WriteLine("Задолженность!");
-    }
-    static void R1Task15()
-    {
-        Console.Write("Введите пароль: "); int p = int.Parse(Console.ReadLine());
-        if (p == 1234) Console.WriteLine("Вход выполнен."); else Console.WriteLine("Неверный пароль.");
-    }
-    static void R1Task16()
-    {
-        Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
-        if (n < 0) Console.WriteLine("Отрицательное."); else Console.WriteLine("Не отрицательное.");
-    }
-    static void R1Task17()
-    {
-        Console.Write("Введите первое число: "); int a = int.Parse(Console.ReadLine());
-        Console.Write("Введите второе число: "); int b = int.Parse(Console.ReadLine());
-        Console.WriteLine($"Разность: {Math.Abs(a - b)}");
-    }
-    static void R1Task18()
-    {
-        Console.Write("Введите сумму покупки: "); double s = double.Parse(Console.ReadLine());
-        if (s > 1000) Console.WriteLine($"Итоговая цена со скидкой 5%: {s * 0.95}");
-        else Console.WriteLine($"Итоговая цена: {s}");
-    }
-    static void R1Task19()
-    {
-        Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
-        if (n % 2 == 0) n /= 2; else n *= 3;
-        Console.WriteLine($"Результат: {n}");
-    }
-    static void R1Task20()
-    {
-        Console.Write("Введите скорость: "); double v = double.Parse(Console.ReadLine());
-        if (v > 90) Console.WriteLine("Нарушение!");
-    }
-    static void R1Task21()
-    {
-        Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
-        if (n == 0) Console.WriteLine("Число равно нулю."); else Console.WriteLine("Число не равно нулю.");
-    }
-    static void R1Task22()
-    {
-        Console.Write("Введите первое число: "); double a = double.Parse(Console.ReadLine());
-        Console.Write("Введите второе число: "); double b = double.Parse(Console.ReadLine());
-        if (Math.Abs(a - b) < 0.001) Console.WriteLine("Равны с точностью 0.001.");
-        else Console.WriteLine("Не равны с точностью 0.001.");
-    }
-    static void R1Task23()
-    {
-        Console.Write("Введите A: "); int a = int.Parse(Console.ReadLine());
-        Console.Write("Введите B: "); int b = int.Parse(Console.ReadLine());
-        if (b != 0 && a % b == 0) Console.WriteLine("Делится без остатка.");
-        else Console.WriteLine("Не делится без остатка.");
-    }
-    static void R1Task24()
-    {
-        Console.Write("Введите первый угол: "); double a = double.Parse(Console.ReadLine());
-        Console.Write("Введите второй угол: "); double b = double.Parse(Console.ReadLine());
-        if (a + b < 180) Console.WriteLine("Треугольник существует.");
-        else Console.WriteLine("Треугольник не существует.");
-    }
-    static void R1Task25()
-    {
-        Console.Write("Введите радиус круга: "); double r = double.Parse(Console.ReadLine());
-        Console.Write("Введите сторону квадрата: "); double s = double.Parse(Console.ReadLine());
-        double circleArea = Math.PI * r * r, squareArea = s * s;
-        if (circleArea > squareArea) Console.WriteLine("Площадь круга больше.");
-        else Console.WriteLine("Площадь квадрата больше.");
-    }
-    static void R1Task26()
-    {
-        Console.Write("Введите первое число: "); double a = double.Parse(Console.ReadLine());
-        Console.Write("Введите второе число: "); double b = double.Parse(Console.ReadLine());
-        double bigger = Math.Max(a, b), smaller = Math.Min(a, b);
-        if (smaller == 0) Console.WriteLine("Деление на ноль невозможно.");
-        else Console.WriteLine($"Частное: {bigger / smaller}");
-    }
-    static void R1Task27()
-    {
-        Console.Write("Введите число: "); int n = Math.Abs(int.Parse(Console.ReadLine()));
-        if (n % 10 == 7) Console.WriteLine("Оканчивается на 7."); else Console.WriteLine("Не оканчивается на 7.");
-    }
-    static void R1Task28()
-    {
-        Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
-        if (n % 2 != 0 && n > 0) Console.WriteLine("Да."); else Console.WriteLine("Нет.");
-    }
-    static void R1Task29()
-    {
-        Console.Write("Введите свободное место (ГБ): "); double s = double.Parse(Console.ReadLine());
-        if (s < 5) Console.WriteLine("Мало свободного места!");
-    }
-    static void R1Task30()
-    {
-        Console.Write("Введите оценку: "); int g = int.Parse(Console.ReadLine());
-        if (g == 4 || g == 5) Console.WriteLine("Молодец."); else Console.WriteLine("Нужно подтянуться.");
-    }
-    static void R1Task31()
-    {
-        Console.Write("Введите первый символ: "); char a = Console.ReadLine()[0];
-        Console.Write("Введите второй символ: "); char b = Console.ReadLine()[0];
-        if (a == b) Console.WriteLine("Символы совпадают."); else Console.WriteLine("Символы не совпадают.");
-    }
-    static void R1Task32()
-    {
-        Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
-        if (n % 2 == 0 && n % 7 == 0) Console.WriteLine("Кратно 14."); else Console.WriteLine("Не кратно 14.");
-    }
-    static void R1Task33()
-    {
-        Console.Write("Введите массу груза (т): "); double m = double.Parse(Console.ReadLine());
-        if (m > 3.5) Console.WriteLine("Перегруз!");
-    }
-    static void R1Task34()
-    {
-        Console.Write("Введите час (0-23): "); int h = int.Parse(Console.ReadLine());
-        if (h >= 6 && h <= 12) Console.WriteLine("Доброе утро.");
-    }
-    static void R1Task35()
-    {
-        Console.Write("Введите рост (см): "); int r = int.Parse(Console.ReadLine());
-        if (r > 200) Console.WriteLine("Очень высокий.");
-    }
-    static void R1Task36()
-    {
-        Console.Write("Введите двузначное число: "); int n = int.Parse(Console.ReadLine());
-        int d1 = n / 10, d2 = n % 10;
-        if (d1 > d2) Console.WriteLine("Первая цифра больше.");
-        else if (d2 > d1) Console.WriteLine("Вторая цифра больше.");
-        else Console.WriteLine("Цифры равны.");
-    }
-    static void R1Task37()
-    {
-        Console.Write("Введите цену: "); double p = double.Parse(Console.ReadLine());
-        if (p == 0) Console.WriteLine("Акция!");
-    }
-    static void R1Task38()
-    {
-        Console.Write("Введите двузначное число: "); int n = int.Parse(Console.ReadLine());
-        if (n / 10 == n % 10) Console.WriteLine("Цифры одинаковые."); else Console.WriteLine("Цифры разные.");
-    }
-    static void R1Task39()
-    {
-        Console.Write("Введите громкость (0-100): "); int v = int.Parse(Console.ReadLine());
-        if (v > 80) Console.WriteLine("Слишком громко для слуха.");
-    }
-    static void R1Task40()
-    {
-        Console.Write("Введите первое число: "); int a = int.Parse(Console.ReadLine());
-        Console.Write("Введите второе число: "); int b = int.Parse(Console.ReadLine());
-        if ((a + b) % 2 == 0) Console.WriteLine($"Сумма: {a + b}");
-        else Console.WriteLine($"Разность: {a - b}");
-    }
-    static void R1Task41()
-    {
-        Console.Write("Введите количество страниц: "); int p = int.Parse(Console.ReadLine());
-        if (p > 100) Console.WriteLine("Включена двухсторонняя печать.");
-    }
-    static void R1Task42()
-    {
-        Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
-        int root = (int)Math.Sqrt(n);
-        if (root * root == n) Console.WriteLine("Полный квадрат."); else Console.WriteLine("Не полный квадрат.");
-    }
-    static void R1Task43()
-    {
-        Console.Write("Введите давление: "); double p = double.Parse(Console.ReadLine());
-        if (p < 740) Console.WriteLine("Пониженное давление.");
-    }
-    static void R1Task44()
-    {
-        Console.Write("Голы команды А: "); int a = int.Parse(Console.ReadLine());
-        Console.Write("Голы команды Б: "); int b = int.Parse(Console.ReadLine());
-        if (a > b) Console.WriteLine("Победила А.");
-        else if (b > a) Console.WriteLine("Победила Б.");
-        else Console.WriteLine("Ничья.");
-    }
-    static void R1Task45()
-    {
-        Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
-        if (n < 0) n = -n;
-        Console.WriteLine($"Модуль: {n}");
-    }
-    static void R1Task46()
-    {
-        Console.Write("Введите сахар: "); double s = double.Parse(Console.ReadLine());
-        if (s > 6.1) Console.WriteLine("Выше нормы.");
-    }
-    static void R1Task47()
-    {
-        Console.Write("Введите средства: "); double m = double.Parse(Console.ReadLine());
-        if (m >= 35) Console.WriteLine("Хватает."); else Console.WriteLine("Не хватает.");
-    }
-    static void R1Task48()
-    {
-        Console.Write("Введите этаж: "); int f = int.Parse(Console.ReadLine());
-        if (f > 10) Console.WriteLine("Высотный этаж.");
-    }
-    static void R1Task49()
-    {
-        Console.Write("Введите первое слово: "); string a = Console.ReadLine();
-        Console.Write("Введите второе слово: "); string b = Console.ReadLine();
-        if (a.Length == b.Length) Console.WriteLine("Одинаковы по длине.");
-        else Console.WriteLine("Разные по длине.");
-    }
-    static void R1Task50()
-    {
-        Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
-        if (n % 2 == 0) Console.WriteLine("Число четное."); else Console.WriteLine("Число нечетное.");
-    }
+{
+    Console.Write("Введите целое число: ");
+    int n = int.Parse(Console.ReadLine());
+    if (n > 0) Console.WriteLine("Число положительное.");
+    else Console.WriteLine("Число не положительное.");
+}
+
+
+
+static void R1Task2()
+{
+    Console.Write("Введите целое число: ");
+    int n = int.Parse(Console.ReadLine());
+    if (n % 2 == 0) Console.WriteLine("Число четное.");
+    else Console.WriteLine("Число нечетное.");
+}
+
+
+
+static void R1Task3()
+{
+    Console.Write("Введите первое число: "); int a = int.Parse(Console.ReadLine());
+    Console.Write("Введите второе число: "); int b = int.Parse(Console.ReadLine());
+    if (a > b) Console.WriteLine($"Наибольшее: {a}"); else Console.WriteLine($"Наибольшее: {b}");
+}
+
+
+
+static void R1Task4()
+{
+    Console.Write("Введите первое число: "); double a = double.Parse(Console.ReadLine());
+    Console.Write("Введите второе число: "); double b = double.Parse(Console.ReadLine());
+    if (a < b) Console.WriteLine($"Наименьшее: {a}"); else Console.WriteLine($"Наименьшее: {b}");
+}
+
+
+
+static void R1Task5()
+{
+    Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
+    if (n % 5 == 0) Console.WriteLine("Делится на 5."); else Console.WriteLine("Не делится на 5.");
+}
+
+
+
+static void R1Task6()
+{
+    Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
+    if (n % 10 == 0) Console.WriteLine("Оканчивается нулем."); else Console.WriteLine("Не оканчивается нулем.");
+}
+
+
+
+static void R1Task7()
+{
+    Console.Write("Введите температуру: "); double t = double.Parse(Console.ReadLine());
+    if (t < 0) Console.WriteLine("На улице мороз, наденьте шапку.");
+}
+
+
+
+static void R1Task8()
+{
+    Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
+    if (n > 100) n -= 20; else n += 10;
+    Console.WriteLine($"Результат: {n}");
+}
+
+
+
+static void R1Task9()
+{
+    Console.Write("Введите первое число: "); int a = int.Parse(Console.ReadLine());
+    Console.Write("Введите второе число: "); int b = int.Parse(Console.ReadLine());
+    if (a == b) Console.WriteLine("Числа равны."); else Console.WriteLine($"Произведение: {a * b}");
+}
+
+
+
+static void R1Task10()
+{
+    Console.Write("Введите возраст: "); int age = int.Parse(Console.ReadLine());
+    if (age >= 18) Console.WriteLine("Доступ разрешен."); else Console.WriteLine("Доступ запрещен.");
+}
+
+
+
+static void R1Task11()
+{
+    Console.Write("Введите число: "); int n = Math.Abs(int.Parse(Console.ReadLine()));
+    if (n >= 100 && n <= 999) Console.WriteLine("Да."); else Console.WriteLine("Нет.");
+}
+
+
+
+static void R1Task12()
+{
+    Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
+    if (n % 3 == 0) Console.WriteLine("Делится на 3."); else Console.WriteLine("Не делится на 3.");
+}
+
+
+
+static void R1Task13()
+{
+    Console.Write("Введите X: "); double x = double.Parse(Console.ReadLine());
+    if (x > 0) Console.WriteLine("Точка правее нуля."); else Console.WriteLine("Точка не правее нуля.");
+}
+
+
+
+static void R1Task14()
+{
+    Console.Write("Введите баланс: "); double b = double.Parse(Console.ReadLine());
+    if (b < 0) Console.WriteLine("Задолженность!");
+}
+
+
+
+static void R1Task15()
+{
+    Console.Write("Введите пароль: "); int p = int.Parse(Console.ReadLine());
+    if (p == 1234) Console.WriteLine("Вход выполнен."); else Console.WriteLine("Неверный пароль.");
+}
+
+
+
+static void R1Task16()
+{
+    Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
+    if (n < 0) Console.WriteLine("Отрицательное."); else Console.WriteLine("Не отрицательное.");
+}
+
+
+
+static void R1Task17()
+{
+    Console.Write("Введите первое число: "); int a = int.Parse(Console.ReadLine());
+    Console.Write("Введите второе число: "); int b = int.Parse(Console.ReadLine());
+    Console.WriteLine($"Разность: {Math.Abs(a - b)}");
+}
+
+
+
+static void R1Task18()
+{
+    Console.Write("Введите сумму покупки: "); double s = double.Parse(Console.ReadLine());
+    if (s > 1000) Console.WriteLine($"Итоговая цена со скидкой 5%: {s * 0.95}");
+    else Console.WriteLine($"Итоговая цена: {s}");
+}
+
+
+
+static void R1Task19()
+{
+    Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
+    if (n % 2 == 0) n /= 2; else n *= 3;
+    Console.WriteLine($"Результат: {n}");
+}
+
+
+
+static void R1Task20()
+{
+    Console.Write("Введите скорость: "); double v = double.Parse(Console.ReadLine());
+    if (v > 90) Console.WriteLine("Нарушение!");
+}
+
+
+
+static void R1Task21()
+{
+    Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
+    if (n == 0) Console.WriteLine("Число равно нулю."); else Console.WriteLine("Число не равно нулю.");
+}
+
+
+
+static void R1Task22()
+{
+    Console.Write("Введите первое число: "); double a = double.Parse(Console.ReadLine());
+    Console.Write("Введите второе число: "); double b = double.Parse(Console.ReadLine());
+    if (Math.Abs(a - b) < 0.001) Console.WriteLine("Равны с точностью 0.001.");
+    else Console.WriteLine("Не равны с точностью 0.001.");
+}
+
+
+
+static void R1Task23()
+{
+    Console.Write("Введите A: "); int a = int.Parse(Console.ReadLine());
+    Console.Write("Введите B: "); int b = int.Parse(Console.ReadLine());
+    if (b != 0 && a % b == 0) Console.WriteLine("Делится без остатка.");
+    else Console.WriteLine("Не делится без остатка.");
+}
+
+
+
+static void R1Task24()
+{
+    Console.Write("Введите первый угол: "); double a = double.Parse(Console.ReadLine());
+    Console.Write("Введите второй угол: "); double b = double.Parse(Console.ReadLine());
+    if (a + b < 180) Console.WriteLine("Треугольник существует.");
+    else Console.WriteLine("Треугольник не существует.");
+}
+
+
+
+static void R1Task25()
+{
+    Console.Write("Введите радиус круга: "); double r = double.Parse(Console.ReadLine());
+    Console.Write("Введите сторону квадрата: "); double s = double.Parse(Console.ReadLine());
+    double circleArea = Math.PI * r * r, squareArea = s * s;
+    if (circleArea > squareArea) Console.WriteLine("Площадь круга больше.");
+    else Console.WriteLine("Площадь квадрата больше.");
+}
+
+
+
+static void R1Task26()
+{
+    Console.Write("Введите первое число: "); double a = double.Parse(Console.ReadLine());
+    Console.Write("Введите второе число: "); double b = double.Parse(Console.ReadLine());
+    double bigger = Math.Max(a, b), smaller = Math.Min(a, b);
+    if (smaller == 0) Console.WriteLine("Деление на ноль невозможно.");
+    else Console.WriteLine($"Частное: {bigger / smaller}");
+}
+
+
+
+static void R1Task27()
+{
+    Console.Write("Введите число: "); int n = Math.Abs(int.Parse(Console.ReadLine()));
+    if (n % 10 == 7) Console.WriteLine("Оканчивается на 7."); else Console.WriteLine("Не оканчивается на 7.");
+}
+
+
+
+static void R1Task28()
+{
+    Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
+    if (n % 2 != 0 && n > 0) Console.WriteLine("Да."); else Console.WriteLine("Нет.");
+}
+
+
+
+static void R1Task29()
+{
+    Console.Write("Введите свободное место (ГБ): "); double s = double.Parse(Console.ReadLine());
+    if (s < 5) Console.WriteLine("Мало свободного места!");
+}
+
+
+
+static void R1Task30()
+{
+    Console.Write("Введите оценку: "); int g = int.Parse(Console.ReadLine());
+    if (g == 4 || g == 5) Console.WriteLine("Молодец."); else Console.WriteLine("Нужно подтянуться.");
+}
+
+
+
+static void R1Task31()
+{
+    Console.Write("Введите первый символ: "); char a = Console.ReadLine()[0];
+    Console.Write("Введите второй символ: "); char b = Console.ReadLine()[0];
+    if (a == b) Console.WriteLine("Символы совпадают."); else Console.WriteLine("Символы не совпадают.");
+}
+
+
+
+static void R1Task32()
+{
+    Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
+    if (n % 2 == 0 && n % 7 == 0) Console.WriteLine("Кратно 14."); else Console.WriteLine("Не кратно 14.");
+}
+
+
+
+static void R1Task33()
+{
+    Console.Write("Введите массу груза (т): "); double m = double.Parse(Console.ReadLine());
+    if (m > 3.5) Console.WriteLine("Перегруз!");
+}
+
+
+
+static void R1Task34()
+{
+    Console.Write("Введите час (0-23): "); int h = int.Parse(Console.ReadLine());
+    if (h >= 6 && h <= 12) Console.WriteLine("Доброе утро.");
+}
+
+
+
+static void R1Task35()
+{
+    Console.Write("Введите рост (см): "); int r = int.Parse(Console.ReadLine());
+    if (r > 200) Console.WriteLine("Очень высокий.");
+}
+
+
+
+static void R1Task36()
+{
+    Console.Write("Введите двузначное число: "); int n = int.Parse(Console.ReadLine());
+    int d1 = n / 10, d2 = n % 10;
+    if (d1 > d2) Console.WriteLine("Первая цифра больше.");
+    else if (d2 > d1) Console.WriteLine("Вторая цифра больше.");
+    else Console.WriteLine("Цифры равны.");
+}
+
+
+
+static void R1Task37()
+{
+    Console.Write("Введите цену: "); double p = double.Parse(Console.ReadLine());
+    if (p == 0) Console.WriteLine("Акция!");
+}
+
+
+
+static void R1Task38()
+{
+    Console.Write("Введите двузначное число: "); int n = int.Parse(Console.ReadLine());
+    if (n / 10 == n % 10) Console.WriteLine("Цифры одинаковые."); else Console.WriteLine("Цифры разные.");
+}
+
+
+
+static void R1Task39()
+{
+    Console.Write("Введите громкость (0-100): "); int v = int.Parse(Console.ReadLine());
+    if (v > 80) Console.WriteLine("Слишком громко для слуха.");
+}
+
+
+
+static void R1Task40()
+{
+    Console.Write("Введите первое число: "); int a = int.Parse(Console.ReadLine());
+    Console.Write("Введите второе число: "); int b = int.Parse(Console.ReadLine());
+    if ((a + b) % 2 == 0) Console.WriteLine($"Сумма: {a + b}");
+    else Console.WriteLine($"Разность: {a - b}");
+}
+
+
+
+static void R1Task41()
+{
+    Console.Write("Введите количество страниц: "); int p = int.Parse(Console.ReadLine());
+    if (p > 100) Console.WriteLine("Включена двухсторонняя печать.");
+}
+
+
+
+static void R1Task42()
+{
+    Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
+    int root = (int)Math.Sqrt(n);
+    if (root * root == n) Console.WriteLine("Полный квадрат."); else Console.WriteLine("Не полный квадрат.");
+}
+
+
+
+static void R1Task43()
+{
+    Console.Write("Введите давление: "); double p = double.Parse(Console.ReadLine());
+    if (p < 740) Console.WriteLine("Пониженное давление.");
+}
+
+
+
+static void R1Task44()
+{
+    Console.Write("Голы команды А: "); int a = int.Parse(Console.ReadLine());
+    Console.Write("Голы команды Б: "); int b = int.Parse(Console.ReadLine());
+    if (a > b) Console.WriteLine("Победила А.");
+    else if (b > a) Console.WriteLine("Победила Б.");
+    else Console.WriteLine("Ничья.");
+}
+
+
+
+static void R1Task45()
+{
+    Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
+    if (n < 0) n = -n;
+    Console.WriteLine($"Модуль: {n}");
+}
+
+
+
+static void R1Task46()
+{
+    Console.Write("Введите сахар: "); double s = double.Parse(Console.ReadLine());
+    if (s > 6.1) Console.WriteLine("Выше нормы.");
+}
+
+
+
+static void R1Task47()
+{
+    Console.Write("Введите средства: "); double m = double.Parse(Console.ReadLine());
+    if (m >= 35) Console.WriteLine("Хватает."); else Console.WriteLine("Не хватает.");
+}
+
+
+
+static void R1Task48()
+{
+    Console.Write("Введите этаж: "); int f = int.Parse(Console.ReadLine());
+    if (f > 10) Console.WriteLine("Высотный этаж.");
+}
+
+
+
+static void R1Task49()
+{
+    Console.Write("Введите первое слово: "); string a = Console.ReadLine();
+    Console.Write("Введите второе слово: "); string b = Console.ReadLine();
+    if (a.Length == b.Length) Console.WriteLine("Одинаковы по длине.");
+    else Console.WriteLine("Разные по длине.");
+}
+
+
+
+static void R1Task50()
+{
+    Console.Write("Введите число: "); int n = int.Parse(Console.ReadLine());
+    if (n % 2 == 0) Console.WriteLine("Число четное."); else Console.WriteLine("Число нечетное.");
+}

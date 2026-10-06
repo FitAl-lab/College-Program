@@ -38,7 +38,7 @@ static void R1Task4()
     if (a < b) Console.WriteLine($"Наименьшее: {a}"); else Console.WriteLine($"Наименьшее: {b}");
 }
 
-
+https://i.supaimg.com/2cb0b2ce-67dc-431c-98db-4e7770ccd3b2/04e70b9b-dd7c-422e-ba62-d80db770eb8d.jpg
 
 static void R1Task5()
 {

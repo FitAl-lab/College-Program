@@ -80,7 +80,7 @@ static void R1Task9()
     if (a == b) Console.WriteLine("Числа равны."); else Console.WriteLine($"Произведение: {a * b}");
 }
 
-
+https://i.supaimg.com/2cb0b2ce-67dc-431c-98db-4e7770ccd3b2/0faef6e8-e353-484d-be3b-3f818a998191.jpg
 
 static void R1Task10()
 {

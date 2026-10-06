@@ -104,7 +104,7 @@ static void R1Task12()
     if (n % 3 == 0) Console.WriteLine("Делится на 3."); else Console.WriteLine("Не делится на 3.");
 }
 
-
+https://i.supaimg.com/2cb0b2ce-67dc-431c-98db-4e7770ccd3b2/24640489-243a-41f5-8dfa-d9bc447a2a8b.jpg
 
 static void R1Task13()
 {

@@ -29,7 +29,7 @@ static void R1Task3()
     if (a > b) Console.WriteLine($"Наибольшее: {a}"); else Console.WriteLine($"Наибольшее: {b}");
 }
 
-
+https://i.supaimg.com/2cb0b2ce-67dc-431c-98db-4e7770ccd3b2/cfd7b841-64df-443c-b8e9-aa5a6033c414.jpg
 
 static void R1Task4()
 {

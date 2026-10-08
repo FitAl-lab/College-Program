@@ -1,8 +1,12 @@
 # Практическая работа №4: Циклические конструкции в C#
 
-**Работу выполняли:** Филаткин А. С.,
+#### **Работу выполняли:** Филаткин А. С.,
+
+---
 
 ![Скрин игры](https://github.com/FitAl-lab/College-Program/blob/main/%D0%A6%D0%B8%D0%BA%D0%BB%D1%8B%20%D0%B2%20C%23/Screen/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B54.png)
+
+----
 
 ```csharp
 using System;
@@ -50,9 +54,12 @@ class Program
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("╔══════════════════════════════════════════════╗");
-            Console.WriteLine($"║      ВОЛНА {wave + 1}: {enemyName,-28}║");
+            Console.WriteLine($"║      ВОЛНА {wave + 1}: {enemyName,-28}   ║");
             Console.WriteLine("╚══════════════════════════════════════════════╝");
             Console.ResetColor();
+            Console.WriteLine();
+            Console.WriteLine("  Приготовься к бою, воин...");
+            Thread.Sleep(2500);
 
             while (playerHp > 0 && enemyHp > 0)
             {
@@ -190,27 +197,28 @@ class Program
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("\nОшибка: введите цифру от 1 до 4!\n");
                 Console.ResetColor();
+                Thread.Sleep(1500);
             }
             else if (action == 2 && favor < 10)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("\nОшибка: недостаточно маны для ярости!\n");
                 Console.ResetColor();
-                isValid = false;
+                Thread.Sleep(1500);
             }
             else if (action == 3 && favor < 10)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("\nОшибка: недостаточно маны для лечения!\n");
                 Console.ResetColor();
-                isValid = false;
+                Thread.Sleep(1500);
             }
             else if (action == 4 && restoreCount <= 0)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("\nОшибка: молитва больше недоступна!\n");
                 Console.ResetColor();
-                isValid = false;
+                Thread.Sleep(1500);
             }
         } while (!isValid);
 

@@ -1,4 +1,4 @@
-# Практическая работа №4: Циклические конструкции в C#
+9# Практическая работа №4: Циклические конструкции в C#
 
 #### **Работу выполняли:** Филаткин А. С., Архипов А. Т.
 
@@ -76,13 +76,13 @@ class Program
                         Console.WriteLine($"Ярл наносит удар топором: {dmg1} урона.");
                         break;
                     case 2:
-                        favor -= 10;
+                        favor -= 1;
                         int dmg2 = rnd.Next(22, 34);
                         enemyHp -= dmg2;
                         Console.WriteLine($"Ярость Ярла: {dmg2} урона! Милость Одина: {favor}/{favorMax}");
                         break;
                     case 3:
-                        favor -= 10;
+                        favor -= 1;
                         playerHp += healAmount;
                         if (playerHp > playerMaxHp)
                         {

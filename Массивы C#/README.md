@@ -5,6 +5,7 @@
 ---
 
 ![Первая половина скрина](https://github.com/FitAl-lab/College-Program/blob/a8b48bd65a8adf2580b31384efa3d914e0a1094c/%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20C%23/screenshots/1.png)
+![Первая половина скрина]()
 
 ----
 

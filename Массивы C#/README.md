@@ -4,7 +4,8 @@
 
 ---
 
-![Первая половина скрина](Массивы C#/screenshots/1.png)
+![Первая половина скрина](<img width="1679" height="1008" alt="изображение" src="https://github.com/user-attachments/assets/0dc38c86-1a2c-49b6-88e3-183130333bf5" />
+)
 
 ----
 

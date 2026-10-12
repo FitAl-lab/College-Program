@@ -4,8 +4,7 @@
 
 ---
 
-![Первая половина скрина]([<img width="1679" height="1008" alt="изображение" src="https://github.com/user-attachments/assets/0dc38c86-1a2c-49b6-88e3-183130333bf5" /](https://github.com/FitAl-lab/College-Program/blob/a876029524ada614f29acb63f5cfa541153e77b6/%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20C%23/screenshots/1.png)>
-)
+![Первая половина скрина]([<img width="1679" height="1008" alt="изображение" src="https://github.com/user-attachments/assets/0dc38c86-1a2c-49b6-88e3-183130333bf5" /](https://github.com/FitAl-lab/College-Program/blob/a876029524ada614f29acb63f5cfa541153e77b6/%D0%9C%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D1%8B%20C%23/screenshots/1.png)>)
 
 ----
 

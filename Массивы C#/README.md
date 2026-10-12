@@ -1,4 +1,12 @@
-Код
+# Практическая работа №4: Циклические конструкции в C#
+
+#### **Работу выполняли:** Филаткин А. С., Архипов А. Т.
+
+---
+
+![Скрин игры](https://github.com/FitAl-lab/College-Program/blob/main/%D0%A6%D0%B8%D0%BA%D0%BB%D1%8B%20%D0%B2%20C%23/Screen/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B54.png)
+
+----
 
 ```csharp
 using System;

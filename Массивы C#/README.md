@@ -17,6 +17,7 @@ class Program
 {
     static void Main()
     {
+        // Студент 1 - Архипов А. Т.
         Console.ForegroundColor = ConsoleColor.DarkGray;
         Console.WriteLine("══════════════════════");
         Console.WriteLine(" Средневековая осада");
@@ -67,6 +68,7 @@ class Program
 
         Console.WriteLine();
 
+        // Студент 2 - Филаткин А. С.
         string[] siegeWeapons = { "Штурмовой отряд с лестницами", "Осадный таран", "Осадная башня" };
         int[] durability = { 40, 85, 140 };
         int[] siegeDamage = { 10, 25, 45 };
